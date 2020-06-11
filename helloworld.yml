@@ -1,7 +1,9 @@
 ---
 - name: This is a hello-world example
   hosts: linux_hosts
-  become: true
+  #connection: local
+  gather_facts: no
+  become: yes
   become_user: root
   become_method: sudo
   tasks:
