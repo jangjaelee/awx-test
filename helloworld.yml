@@ -3,7 +3,7 @@
   hosts: linux_hosts
   #connection: local
   gather_facts: no
-  become: true
+  become: yes
   become_user: root
   become_method: sudo
   tasks:
